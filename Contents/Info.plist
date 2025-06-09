@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>CFBundleIdentifier</key>
-    <string>com.plexapp.agents.yamlmetadata</string>
-    <key>CFBundleName</key>
-    <string>YamlMetadataAgent</string>
-    <key>PlexFrameworkVersion</key>
-    <string>2</string>
-    <key>PlexPluginClass</key>
-    <string>Agent</string>
-    <key>PlexAgentPrimary</key>
-    <true/>
-    <key>PlexAgentContributesTo</key>
-    <array>
-        <string>com.plexapp.agents.movie</string>
-    </array>
-</dict>
-</plist>
+<Plugin type="agent" id="com.example.yamlmetadata">
+  <Info>
+    <name>YAML Metadata Agent</name>
+    <version>1.0.0</version>
+  </Info>
+  <Specifications>
+    <AgentIdentifier>com.example.yamlmetadata</AgentIdentifier>
+    <AgentType>movie</AgentType>
+    <Languages>
+      <Language>en</Language>
+      <Language>ko</Language>
+    </Languages>
+    <Provides>
+      <Primary>true</Primary>
+    </Provides>
+  </Specifications>
+</Plugin>
